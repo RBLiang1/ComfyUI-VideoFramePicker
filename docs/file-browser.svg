@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" role="img" aria-label="目录浏览器示意">
+  <defs>
+    <style>
+      .lbl { font: 12px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #e6e9ee; }
+      .sm  { font: 11px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #9aa5b1; }
+      .xs  { font: 10px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #7d8794; }
+      .btn { fill: #3a4250; stroke: #525c6b; }
+      .chip { fill: #333c48; stroke: #4d5765; }
+      .row-bg { fill: transparent; }
+    </style>
+  </defs>
+
+  <!-- overlay backdrop -->
+  <rect x="0" y="0" width="720" height="520" fill="#0e1116" opacity=".72"/>
+
+  <!-- dialog -->
+  <rect x="30" y="28" width="660" height="452" rx="10" fill="#262d36" stroke="#454f5d"/>
+  <path d="M30 38 a10 10 0 0 1 10 -10 h640 a10 10 0 0 1 10 10 v26 h-660 z" fill="#323b46"/>
+
+  <text x="46" y="54" class="lbl" font-weight="600">选择视频文件</text>
+  <rect x="654" y="36" width="24" height="22" rx="4" class="btn" fill-opacity=".8"/>
+  <text x="666" y="52" class="sm" text-anchor="middle">✕</text>
+
+  <!-- nav row -->
+  <rect x="46" y="80" width="62" height="24" rx="5" class="btn"/>
+  <text x="56" y="96" class="sm">⬆ 上级</text>
+  <rect x="116" y="80" width="478" height="24" rx="5" fill="#1f242b" stroke="#4d5765"/>
+  <text x="128" y="96" class="sm">\\NAS\shoot\01_分镜</text>
+  <rect x="602" y="80" width="58" height="24" rx="5" class="btn"/>
+  <text x="613" y="96" class="sm">转到</text>
+
+  <!-- drive chips -->
+  <g>
+    <rect x="46" y="114" width="42" height="20" rx="10" class="chip"/><text x="58" y="128" class="xs">C:</text>
+    <rect x="94" y="114" width="42" height="20" rx="10" class="chip"/><text x="106" y="128" class="xs">D:</text>
+    <rect x="142" y="114" width="42" height="20" rx="10" class="chip"/><text x="154" y="128" class="xs">G:</text>
+    <rect x="190" y="114" width="46" height="20" rx="10" class="chip"/><text x="200" y="128" class="xs">Z:</text>
+    <text x="248" y="128" class="xs">← 本地盘与映射的网络盘</text>
+  </g>
+
+  <!-- recent chips -->
+  <g>
+    <rect x="46" y="142" width="132" height="20" rx="10" fill="#2c3644" stroke="#4d5765"/>
+    <text x="56" y="156" class="xs">shot_012.mp4</text>
+    <rect x="184" y="142" width="118" height="20" rx="10" fill="#2c3644" stroke="#4d5765"/>
+    <text x="194" y="156" class="xs">take_07.mov</text>
+    <rect x="308" y="142" width="126" height="20" rx="10" fill="#2c3644" stroke="#4d5765"/>
+    <text x="318" y="156" class="xs">B_roll_cup.mp4</text>
+    <text x="444" y="156" class="xs">← 最近使用</text>
+  </g>
+
+  <!-- list -->
+  <rect x="46" y="174" width="614" height="240" rx="6" fill="#1f242b" stroke="#3f4855"/>
+
+  <g>
+    <!-- folder rows -->
+    <g>
+      <path d="M62 190 h10 l3 4 h11 a1.5 1.5 0 0 1 1.5 1.5 v10 a1.5 1.5 0 0 1 -1.5 1.5 h-24 a1.5 1.5 0 0 1 -1.5 -1.5 v-14 a1.5 1.5 0 0 1 1.5 -1.5 z" fill="none" stroke="#8fa4bd" stroke-width="1.4"/>
+      <text x="94" y="203" class="lbl">02_素材</text>
+      <text x="600" y="203" class="xs" text-anchor="end">文件夹</text>
+    </g>
+    <line x1="46" y1="216" x2="660" y2="216" stroke="#2c333d"/>
+    <g transform="translate(0,34)">
+      <path d="M62 190 h10 l3 4 h11 a1.5 1.5 0 0 1 1.5 1.5 v10 a1.5 1.5 0 0 1 -1.5 1.5 h-24 a1.5 1.5 0 0 1 -1.5 -1.5 v-14 a1.5 1.5 0 0 1 1.5 -1.5 z" fill="none" stroke="#8fa4bd" stroke-width="1.4"/>
+      <text x="94" y="203" class="lbl">03_参考</text>
+      <text x="600" y="203" class="xs" text-anchor="end">文件夹</text>
+    </g>
+    <line x1="46" y1="250" x2="660" y2="250" stroke="#2c333d"/>
+
+    <!-- video rows: first one hovered / current -->
+    <g transform="translate(0,68)">
+      <rect x="48" y="180" width="610" height="30" rx="4" fill="#5aa9ff" opacity=".16"/>
+      <rect x="62" y="188" width="14" height="14" rx="2" fill="none" stroke="#a9b6c5" stroke-width="1.3"/>
+      <path d="M67 191 l5 4 -5 4 z" fill="#a9b6c5"/>
+      <text x="94" y="199" class="lbl">shot_012.mp4</text>
+      <text x="600" y="199" class="xs" text-anchor="end">1.24 GB</text>
+    </g>
+    <line x1="46" y1="284" x2="660" y2="284" stroke="#2c333d"/>
+
+    <g transform="translate(0,102)">
+      <rect x="62" y="188" width="14" height="14" rx="2" fill="none" stroke="#a9b6c5" stroke-width="1.3"/>
+      <path d="M67 191 l5 4 -5 4 z" fill="#a9b6c5"/>
+      <text x="94" y="199" class="lbl">take_07.mov</text>
+      <text x="600" y="199" class="xs" text-anchor="end">386.5 MB</text>
+    </g>
+    <line x1="46" y1="318" x2="660" y2="318" stroke="#2c333d"/>
+
+    <g transform="translate(0,136)">
+      <rect x="62" y="188" width="14" height="14" rx="2" fill="none" stroke="#a9b6c5" stroke-width="1.3"/>
+      <path d="M67 191 l5 4 -5 4 z" fill="#a9b6c5"/>
+      <text x="94" y="199" class="lbl">B_roll_cup.mp4</text>
+      <text x="600" y="199" class="xs" text-anchor="end">2.71 GB</text>
+    </g>
+    <line x1="46" y1="352" x2="660" y2="352" stroke="#2c333d"/>
+
+    <g transform="translate(0,170)">
+      <rect x="62" y="188" width="14" height="14" rx="2" fill="none" stroke="#a9b6c5" stroke-width="1.3"/>
+      <path d="M67 191 l5 4 -5 4 z" fill="#a9b6c5"/>
+      <text x="94" y="199" class="lbl">closeup_hand.mp4</text>
+      <text x="600" y="199" class="xs" text-anchor="end">640.2 MB</text>
+    </g>
+  </g>
+
+  <!-- status -->
+  <text x="48" y="436" class="xs">\\NAS\shoot\01_分镜　·　2 个文件夹 / 4 个视频</text>
+  <text x="48" y="458" class="xs">只列子文件夹与视频文件，按修改时间倒序；点文件名即选中，Esc 关闭</text>
+</svg>

@@ -72,6 +72,11 @@ imageio-ffmpeg  # 提供 ffmpeg 可执行文件
 - **`|◀` / `▶|`** — 跳首帧 / 末帧。
 - 拖滑块时若正在播放会先静默暂停，避免两套位置打架。
 
+点「选择视频…」弹出的目录浏览器：
+
+![目录浏览器示意](docs/file-browser.svg)
+
+
 ## 实现要点
 
 - **预览**：节点里嵌 `<video>`，源是 `/pathvframe/stream`，支持 HTTP Range（206），
