@@ -26,6 +26,9 @@ git clone https://github.com/RBLiang1/ComfyUI-VideoFramePicker.git
 
 重启 ComfyUI，在 `video` 分类下找到「视频抽帧（路径·预览选帧）」。
 
+也可以不用命令行：ComfyUI Manager → **Install via Git URL** → 填
+`https://github.com/RBLiang1/ComfyUI-VideoFramePicker.git`。
+
 依赖（`requirements.txt`，ComfyUI 通常已自带）：
 
 ```
